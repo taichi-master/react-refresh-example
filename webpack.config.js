@@ -1,6 +1,7 @@
 const path = require( 'path' ),
       resolvePath = folder => path.resolve( __dirname, folder ),
-      ReactRefreshWebpackPlugin = require( '@pmmmwh/react-refresh-webpack-plugin' )
+      ReactRefreshWebpackPlugin = require( '@pmmmwh/react-refresh-webpack-plugin' ),
+      webpack = require( 'webpack' )
 
 module.exports = {
   mode: 'development',
@@ -8,6 +9,7 @@ module.exports = {
   entry: {
     main: [
       resolvePath( 'src/main.jsx' )
+      // 'webpack-hot-middleware/client' // required for webpack-hot-middle only; will be added in server/index.js
     ]
   },
 
@@ -44,6 +46,7 @@ module.exports = {
     ]
   },
   plugins: [
+    new webpack.HotModuleReplacementPlugin(), // required for webpack-hot-middle only
     new ReactRefreshWebpackPlugin()
   ]
 }

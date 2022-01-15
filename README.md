@@ -1,4 +1,15 @@
 # React Fast Refresh Example
+## works for either webpack-dev-server or express.js (using webpack-dev-middletier)
+
+### To start project using webpack-dev-server
+```bash
+npm run dev
+```
+
+### To start project using express.js server
+```bash
+npm start
+```
 
 Read more:
 ---------

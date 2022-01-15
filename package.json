@@ -1,13 +1,21 @@
 {
   "name": "react-refresh-example",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "react-refresh example",
-  "main": "index.js",
+  "main": "./server/index.js",
   "scripts": {
-    "dev": "webpack serve"
+    "dev": "webpack serve",
+    "start": "node server"
   },
-  "author": "taichi-master",
+  "author": "Kei Sing Wong",
   "license": "ISC",
+  "keywords": [
+    "react-refresh-webpack-plugin",
+    "react-refresh",
+    "hot reload",
+    "react",
+    "webpack"
+  ],
   "devDependencies": {
     "@babel/preset-react": "^7.16.7",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.4",
@@ -17,9 +25,12 @@
     "style-loader": "^3.3.1",
     "webpack": "^5.66.0",
     "webpack-cli": "^4.9.1",
-    "webpack-dev-server": "^4.7.3"
+    "webpack-dev-middleware": "^5.3.0",
+    "webpack-dev-server": "^4.7.3",
+    "webpack-hot-middleware": "^2.25.1"
   },
   "dependencies": {
+    "express": "^4.17.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   }
