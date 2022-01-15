@@ -3,12 +3,11 @@ const path = require( 'path' ),
       ReactRefreshWebpackPlugin = require( '@pmmmwh/react-refresh-webpack-plugin' )
 
 module.exports = {
-  // context: resolvePath( 'src' ),
   mode: 'development',
 
   entry: {
     main: [
-      resolvePath( './src/main.jsx' )
+      resolvePath( 'src/main.jsx' )
     ]
   },
 
