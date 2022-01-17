@@ -1,11 +1,12 @@
 import React from 'react'
+import { logLoading } from './logLoading'
 
-console.log( `🎉 loading %clifecycle%c.jsx  🎉`, 'font-size: 1.5em;; text-transform: capitalize;', '' )
+logLoading( 'lifecycle' )
 
 // FIXME: Still couldn't get the react-refresh to work with suggested workaround.
 // https://github.com/pmmmwh/react-refresh-webpack-plugin/issues/258#issuecomment-861084676 
 
-export class Lifecycle extends React.Component {
+export default class Lifecycle extends React.Component {
 
   hints
 

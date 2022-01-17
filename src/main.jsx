@@ -2,9 +2,10 @@ import './main.css'
 
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { App } from './app.jsx'
+import App from './app.jsx'
+import { logLoading } from './logLoading'
 
-console.log( `🎉 loading %cmain%c.jsx  🎉`, 'font-size: 1.5em; text-transform: capitalize;', '' )
+logLoading( 'main' )
 
 // run this before ReactDOM.render
 if (process.env.NODE_ENV !== 'production' && typeof window !== 'undefined') {

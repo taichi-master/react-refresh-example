@@ -1,9 +1,11 @@
 import React from 'react'
-import { Lifecycle, Hooks } from './lifecycle.jsx'
+import Lifecycle from './lifecycle.jsx'
+import Hooks from './hooks.jsx'
+import { logLoading } from './logLoading'
 
-console.log( `🎉 loading %capp%c.jsx  🎉`, 'font-size: 1.5em;; text-transform: capitalize;', '' )
+logLoading( 'app' )
 
-export function App () {
+export default function App () {
   return (
     <>
       <h1>Hello World</h1>
